@@ -1,0 +1,23 @@
+.project {
+    margin-bottom: 1.2rem;
+  &__title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    & .link > img{
+        padding-top: 2px;
+        height: 14px;
+    }
+    
+  }
+
+  &__desc {
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+  }
+
+  &__tech {
+    display: flex;
+  }
+}

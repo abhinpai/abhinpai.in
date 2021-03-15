@@ -1,5 +1,12 @@
-.dark-theme{
-    background: black;
-    color: white;
-    transition: 0.3s,
+:root {
+  --bg-color: black;
+  --primay-font-color: white;
+  --secondary-font-color: black;
+  --card-color: #2F2F2F
+}
+
+.dark-theme {
+  background: var(--bg-color);
+  color: var(--primay-font-color);
+  transition: 0.3s;
 }

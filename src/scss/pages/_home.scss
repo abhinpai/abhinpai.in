@@ -10,11 +10,31 @@
     display: grid;
     grid-template-columns: 2fr 4fr;
 
-   &__skills{
-    &-list{
-      display: flex;
-      margin-right: 6px;
+    &__item {
+      margin-bottom: 2rem;
     }
-   }
+
+    & .right {
+      &__skills {
+        &-list {
+          display: flex;
+          margin-right: 6px;
+        }
+      }
+
+      &__experience {
+        &-list {
+          display: flex;
+          & div {
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      &__projects {
+        &-list {
+        }
+      }
+    }
   }
 }

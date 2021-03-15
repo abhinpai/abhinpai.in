@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Honeywell Forge",
+    "link": null,
+    "description": "An Enterprise Performance Management Software-as-a-Service, purpose-built on a native edge-to-cloud, data-driven architecture to accelerate digital transformation",
+    "stack": [
+      "Rect",
+      "Typescript",
+      ".Net Core",
+      "MobX",
+      "SCSS",
+      "GraphQL",
+      "Storybook",
+      "Kafka"
+    ]
+  },
+  {
+    "title": "KeyP - Password Manager Application",
+    "link": "https://play.google.com/store/apps/details?id=com.pi.KeyP",
+    "description": "Design and developed the simplest solution to keep your passwords/pin only with you without accessing the internet ",
+    "stack": ["Fluter", "SQLite", "Figma"]
+  },
+  {
+    "title": "Walfin - an app to track all expenses",
+    "link": "https://play.google.com/store/apps/details?id=com.think201.walfin.app",
+    "description": "Designed and developed daily expenses tracker mobile app using Ionic 3 and Sqlite which provides a chat-based interface to add, manage and track all of your expenses",
+    "stack": ["Ionic-3", "SQLite"]
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "The simple, lightweight personal portfolio built by using React, SCSS, and Docusaurus and hosted into Github Page",
+    "link": "https://abhinpai.github.io/",
+    "stack": ["Rect", "SCSS", "Docusourus", "Github page"]
+  }
+]
