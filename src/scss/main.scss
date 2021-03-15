@@ -2,5 +2,9 @@
 @import './base/reset';
 @import './base/typography';
 
+// Page styles
+@import './pages/home';
+
 // Component styles
-@import './components/test'
+@import './components/message';
+@import './components/hero';

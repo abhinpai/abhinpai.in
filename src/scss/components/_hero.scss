@@ -1,0 +1,8 @@
+.hero {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    & img {
+        height: 100%;
+    }
+}

@@ -1,11 +1,17 @@
 import React from 'react';
-import '../scss/components/_test.scss'
+import Hero from '../components/atoms/Hero';
+import Message from '../components/molecues/Message';
+import '../scss/pages/_home.scss';
+import HeroImage from '../assets/hero.svg'
 
 function Home() {
   return (
-    <div>
-      <h2 className='head'> Hello, I'm pumpped up</h2>
-    </div>
+    <main className='home'>
+      <div className='home__banner'>
+        <Message />
+        <Hero image={HeroImage} alt="Hero"/>
+      </div>
+    </main>
   );
 }
 
