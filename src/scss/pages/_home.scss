@@ -1,9 +1,9 @@
 .home {
   padding: 4rem;
-  margin-left: 10rem;
+  // margin-left: 10rem;
   
   &__banner {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 0.4fr 2fr 1fr;
   }
 }

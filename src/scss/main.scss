@@ -2,9 +2,15 @@
 @import './base/reset';
 @import './base/typography';
 
+// Theme Styles
+@import './themes/dark';
+@import './themes/light';
+
 // Page styles
 @import './pages/home';
 
 // Component styles
 @import './components/message';
 @import './components/hero';
+@import './components/themeSwitch';
+@import './components/description';
