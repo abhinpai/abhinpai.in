@@ -4,24 +4,30 @@
   padding: 0 3rem;
   margin-bottom: auto;
 
+  svg{
+    fill: red;
+  }
+
   & h3 {
     font-weight: 500;
   }
 
   &__handler {
     font-weight: 700;
+    display: flex;
+    align-items: center;
   }
 
-&__designation{
+  &__designation {
     margin: 6px 0;
-}
+  }
 
   &__site {
     color: #acacac;
   }
 
   &__provider {
-    margin-left: 0.6rem;
+    margin-left: 0.4rem;
     cursor: pointer;
   }
 }
