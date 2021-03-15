@@ -1,0 +1,1 @@
+### Pages style directory holds the style related to the page for example HomePage, dashboard. Notfound Page
