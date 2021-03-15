@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function PlaceHolder() {
-    return (
-        <div className="placeholder">
-            
-        </div>
-    )
+  return <div className='placeholder'></div>;
 }
 
-export default PlaceHolder
+export default PlaceHolder;
