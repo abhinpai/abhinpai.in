@@ -68,7 +68,8 @@ function Home() {
               <div className='right-projects-list'>
                 {Projects.map((project, index) => (
                   <Project
-                  link={project.link}
+                    key={index}
+                    link={project.link}
                     title={project.title}
                     description={project.description}
                     techs={project.stack}

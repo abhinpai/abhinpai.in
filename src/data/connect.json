@@ -1,0 +1,20 @@
+[
+  {
+    "siteName": "Github",
+    "link": "https://github.com/abhinpai",
+    "url": "github.com /",
+    "size": "18px"
+  },
+  {
+    "siteName": "LinkedIn",
+    "link": "https://www.linkedin.com/in/abhinpai/",
+    "url": "linkedin.com/",
+    "size": "15px"
+  },
+  {
+    "siteName": "Twitter",
+    "link": "https://twitter.com/paiabhin",
+    "url": "twitter.com /",
+    "size": "15px"
+  }
+]

@@ -4,8 +4,8 @@
   padding: 0 3rem;
   margin-bottom: auto;
 
-  svg{
-    fill: red;
+  & .left{
+    min-width: 6rem;
   }
 
   & h3 {
@@ -24,6 +24,13 @@
 
   &__site {
     color: #acacac;
+    opacity: 0;
+  }
+
+  &__site-active {
+    opacity: 1;
+    color: #acacac;
+    transition: 800ms ease-in-out;
   }
 
   &__provider {
