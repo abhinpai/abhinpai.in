@@ -1,9 +1,20 @@
 .home {
   padding: 4rem;
-  // margin-left: 10rem;
-  
+
   &__banner {
     display: grid;
     grid-template-columns: 0.4fr 2fr 1fr;
+  }
+
+  &__section {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+
+   &__skills{
+    &-list{
+      display: flex;
+      margin-right: 6px;
+    }
+   }
   }
 }
