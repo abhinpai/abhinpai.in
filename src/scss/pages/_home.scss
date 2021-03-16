@@ -1,21 +1,29 @@
 .home {
   padding: 4rem;
 
-  &__banner {
-    display: grid;
-    grid-template-columns: 0.4fr 2fr 1fr;
+  & .section__intro {
+    padding: 0 16rem; // Media Query
+    &__banner {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
   }
 
-  &__section {
+  & .section__item {
+    margin-bottom: 2rem;
+  }
+
+  & .section__details {
     display: grid;
     grid-template-columns: 2fr 4fr;
 
-    &__item {
-      margin-bottom: 2rem;
+    & .left {
+      padding-left: 7rem; // Media Query
     }
 
     & .right {
-      padding-right: 9rem;
+      padding-right: 16rem; // Media Query
       &__skills {
         &-list {
           display: flex;
@@ -29,11 +37,6 @@
           & div {
             margin-right: 1rem;
           }
-        }
-      }
-
-      &__projects {
-        &-list {
         }
       }
     }

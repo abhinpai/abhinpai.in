@@ -1,4 +1,19 @@
-.light-theme{
-    background: white;
-    transition: 0.3s,
+:root {
+  --bg-color: white;
+  --primay-font-color: black;
+  --secondary-font-color: black;
+  --card-color: #f1f1f1;
+}
+
+.light-theme {
+  background: var(--bg-color);
+  color: var(--primay-font-color);
+  transition: 0.5s ease-in-out;
+
+  .placeholder,
+  .experienceCard,
+  .pill {
+    background-color: var(--card-color);
+    transition: background-color 0.3s ease-in-out;
+  }
 }

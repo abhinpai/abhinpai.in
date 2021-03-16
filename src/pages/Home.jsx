@@ -21,34 +21,41 @@ function Home() {
 
   const getThemeClass = () => {
     const body = document.getElementById('grandMaster');
-    isDarkThemeEnabled
-      ? body.classList.add('dark-theme')
-      : body.classList.remove('dark-theme');
+    if (isDarkThemeEnabled) {
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+    } else {
+      body.classList.add('light-theme');
+      body.classList.remove('dark-theme');
+    }
   };
 
   return (
     <main className={getThemeClass()}>
       <ThemeSwitch />
       <div className='home'>
-        <div className='home__banner'>
-          <div />
-          <Message />
-          <Hero image={HeroImage} alt='Hero' />
-        </div>
-        <Description />
+        <section className='section__intro'>
+          <div className='section__intro__banner'>
+            <Message />
+            <Hero image={HeroImage} alt='Hero' />
+          </div>
+          <Description />
+        </section>
 
-        <section className='home__section'>
-          <Connect />
+        <section className='section__details'>
+          <div className='left'>
+            <Connect />
+          </div>
           <div className='right'>
-            <div className='right__skills home__section__item'>
+            <div className='right__skills section__item'>
               <Ribbon heading='I’m goot at' />
               <div className='right__skills-list'>
-                {skills.map((item, index) => (
+                {skills.map((_, index) => (
                   <PlaceHolder key={index} />
                 ))}
               </div>
             </div>
-            <div className='right__experience home__section__item'>
+            <div className='right__experience section__item'>
               <Ribbon heading='Work Experience' />
               <div className='right__experience-list'>
                 <ExperienceCard
@@ -63,7 +70,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div className='right-projects home__section__item'>
+            <div className='right-projects section__item'>
               <Ribbon heading='My works' />
               <div className='right-projects-list'>
                 {Projects.map((project, index) => (

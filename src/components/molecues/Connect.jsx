@@ -15,16 +15,16 @@ function Connect() {
     name: '',
   });
 
-  const mouseEnter = (site) => {
+  const mouseEnter = (site, url) => {
     switch (site) {
       case 'Github':
-        setSiteStyle({ class: 'connect__site-active', name: 'github.com /' });
+        setSiteStyle({ class: 'connect__site-active', name: url });
         break;
       case 'Twitter':
-        setSiteStyle({ class: 'connect__site-active', name: 'twitter.com /' });
+        setSiteStyle({ class: 'connect__site-active', name: url });
         break;
       case 'LinkedIn':
-        setSiteStyle({ class: 'connect__site-active', name: 'linkedin.com/' });
+        setSiteStyle({ class: 'connect__site-active', name: url });
         break;
       default:
         setSiteStyle({ class: 'connect__site', name: '' });
@@ -45,7 +45,7 @@ function Connect() {
 
   return (
     <div className='connect'>
-      <div className='left'>
+      <div className='connect__left'>
         <p className={siteStyle.class}>{siteStyle.name}</p>
       </div>
       <div>
@@ -58,7 +58,7 @@ function Connect() {
              <a style={{display: 'flex'}} key={index} href={item.link} target='_blank' rel='noopener noreferrer'>
                 <img
                 loading="lazy"
-                onMouseEnter={() => mouseEnter(item.siteName)}
+                onMouseEnter={() => mouseEnter(item.siteName, item.url)}
                 onMouseLeave={() =>
                   setSiteStyle({ class: 'connect__site', name: '' })
                 }
