@@ -5,6 +5,7 @@
     margin-bottom: 1rem;
 
     & .link > img {
+      margin-left: 4px;
       padding-top: 2px;
       height: 14px;
     }
@@ -14,6 +15,7 @@
     margin-bottom: 1rem;
     letter-spacing: 1px;
     line-height: 1.4rem;
+    font-weight: 300;
   }
 
   &__tech {

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../../assets/hero.svg';
+import HeroImage from '../../assets/hero-2.svg';
 import Description from '../atoms/Description';
 import Hero from '../atoms/Hero';
 import Message from './Message';

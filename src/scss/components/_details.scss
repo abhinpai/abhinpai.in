@@ -1,6 +1,6 @@
 .details {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 2fr 4fr;
 
   &__left {
     margin-left: 9rem;
@@ -22,7 +22,7 @@
       }
     }
 
-    &__projets{
+    &__projets {
       margin-top: 1.5rem;
     }
   }

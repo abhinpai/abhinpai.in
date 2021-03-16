@@ -1,16 +1,27 @@
 import React from 'react';
 import Pill from '../atoms/Pill';
 import LinkIcon from '../../assets/link.svg';
+import LinkDarkIcon from '../../assets/link-dark.svg';
+import useData from '../../state/dataLayer';
 
 function Project({ title, description, techs, link }) {
+  const [{ isDarkThemeEnabled }] = useData();
   return (
     <div className='project'>
       <h3 className='project__title'>
         {title}{' '}
         {link && (
           <span>
-            <a className="link" href={link} target='_blank' rel='noopener noreferrer'>
-              <img src={LinkIcon} alt='link' />
+            <a
+              className='link'
+              href={link}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={isDarkThemeEnabled ? LinkDarkIcon : LinkIcon}
+                alt='link'
+              />
             </a>
           </span>
         )}{' '}
