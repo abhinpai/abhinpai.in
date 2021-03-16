@@ -1,0 +1,29 @@
+.details {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  &__left {
+    margin-left: 9rem;
+  }
+  &__right {
+    margin-right: 18rem;
+    &__skills {
+      &-list {
+        min-width: 10%;
+        overflow-x: auto;
+        display: flex;
+      }
+    }
+    &__experience {
+      margin-top: 1.5rem;
+      &-list {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    &__projets{
+      margin-top: 1.5rem;
+    }
+  }
+}

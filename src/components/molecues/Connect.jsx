@@ -7,6 +7,7 @@ import LinkedInIcon from '../../assets/linkedin.svg';
 import LinkedInDarkIcon from '../../assets/linkedin-dark.svg';
 import useData from '../../state/dataLayer';
 import ConnectData from '../../data/connect.json';
+import HeroImage from '../../assets/hero.svg';
 
 function Connect() {
   const [{ isDarkThemeEnabled }] = useData();
@@ -48,29 +49,44 @@ function Connect() {
       <div className='connect__left'>
         <p className={siteStyle.class}>{siteStyle.name}</p>
       </div>
-      <div>
-        <h3>Abhin Pai</h3>
-        <h3 className='connect__designation'>Full-stack Developer</h3>
-        <p className='connect__handler'>
-          @abhinpai{' '}
-          {ConnectData.map((item, index) => {
-            return (
-             <a style={{display: 'flex'}} key={index} href={item.link} target='_blank' rel='noopener noreferrer'>
-                <img
-                loading="lazy"
-                onMouseEnter={() => mouseEnter(item.siteName, item.url)}
-                onMouseLeave={() =>
-                  setSiteStyle({ class: 'connect__site', name: '' })
-                }
-                className='connect__provider'
-                height={item.size}
-                src={getIcon(item.siteName)}
-                alt={item.siteName}
-              />
-             </a>
-            );
-          })}
-        </p>
+      <div className='connect__right'>
+        <div>
+          <h3>Abhin Pai</h3>
+          <h3 className='connect__designation'>Full-stack Developer</h3>
+          <p className='connect__handler'>
+            @abhinpai{' '}
+            {ConnectData.map((item, index) => {
+              return (
+                <a
+                  style={{ display: 'flex' }}
+                  key={index}
+                  href={item.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <img
+                    loading='lazy'
+                    onMouseEnter={() => mouseEnter(item.siteName, item.url)}
+                    onMouseLeave={() =>
+                      setSiteStyle({ class: 'connect__site', name: '' })
+                    }
+                    className='connect__provider'
+                    height={item.size}
+                    src={getIcon(item.siteName)}
+                    alt={item.siteName}
+                  />
+                </a>
+              );
+            })}
+          </p>
+        </div>
+        <img
+          height='100px'
+          className='hero-connect'
+          src={HeroImage}
+          alt={'alt'}
+          loading='lazy'
+        />
       </div>
     </div>
   );
