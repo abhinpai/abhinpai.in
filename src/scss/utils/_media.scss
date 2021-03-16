@@ -1,4 +1,14 @@
-/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+  .message {
+    font-size: 1rem !important;
+    line-height: 1.8rem !important;
+
+    &__welcome > span > img {
+      height: 30px;
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .parent {
     margin: 2rem 2rem;
@@ -9,10 +19,6 @@
   }
 
   .hero {
-    display: none;
-  }
-  .hero-connect {
-    display: block !important;
     height: 80px !important;
   }
 
@@ -21,16 +27,34 @@
     line-height: 2rem;
   }
 
-  .description > p {
-    line-height: 1.8rem;
-    font-size: 0.9rem;
+  .description {
+    padding: 1rem 0;
+    p {
+      line-height: 1.8rem;
+      font-size: 0.9rem;
+    }
   }
+
   .connect {
-    padding: 0;
+    display: none; // need to think better placement
+    // padding: 0;
   }
 
   .experienceCard {
     width: auto;
+  }
+
+  .ribbon > span {
+    font-size: 1.2rem;
+  }
+
+  .project {
+    &__title {
+      font-size: 1rem;
+    }
+    &__desc {
+      font-size: 0.9rem;
+    }
   }
 
   .details {
@@ -41,7 +65,7 @@
       margin-left: 0;
     }
     &__right {
-      margin: 3rem 0;
+      margin: 0;
 
       &__experience {
         &-list {
@@ -60,20 +84,20 @@
   }
   .message {
     font-size: 1.2rem;
-    line-height: 2rem;
-  }
-  .hero {
-    display: none;
+    line-height: 1.8rem;
   }
 
-  .hero-connect {
-    display: block !important;
+  .hero {
     height: 80px !important;
   }
 
-  .description > p {
-    line-height: 1.8rem;
-    font-size: 1rem;
+  .description {
+    padding: 1rem 0;
+
+    & p {
+      line-height: 1.8rem;
+      font-size: 1rem;
+    }
   }
   .intro {
     margin: 0 4rem;
@@ -84,7 +108,20 @@
   }
 
   .connect {
-    padding: 0 4rem;
+    display: none; // need to think better placement
+  }
+
+  .ribbon > span {
+    font-size: 1.2rem;
+  }
+
+  .project {
+    &__title {
+      font-size: 1rem;
+    }
+    &__desc {
+      font-size: 0.9rem;
+    }
   }
 
   .details {
@@ -95,7 +132,7 @@
       margin-left: 0;
     }
     &__right {
-      margin: 3rem 4rem;
+      margin: 0 4rem;
 
       &__experience {
         &-list {
@@ -117,14 +154,6 @@
     line-height: 2.4rem;
   }
 
-  .hero {
-    display: none;
-  }
-
-  .hero-connect {
-    display: block !important;
-  }
-
   .intro {
     margin: 0 4rem;
   }
@@ -135,7 +164,8 @@
   }
 
   .connect {
-    padding: 0 4rem;
+    display: none; // Need to think a better placement for connect
+    // padding: 0 4rem;
   }
 
   .details {
@@ -146,8 +176,12 @@
       margin-left: 0;
     }
     &__right {
-      margin: 3rem 4rem;
+      margin: 0 4rem;
     }
+  }
+
+  .ribbon > span {
+    font-size: 1.6rem;
   }
 }
 
