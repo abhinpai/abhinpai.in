@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { ActionToggleTheme } from '../../state/actionCreator';
 import useData from '../../state/dataLayer';
+import DarkBulbIcon from '../../assets/dark-bulb.svg';
+import LightBulbIcon from '../../assets/light-bulb.svg';
 
 function ThemeSwitch() {
   const [{ isDarkThemeEnabled }, dispatch] = useData();
@@ -17,15 +19,15 @@ function ThemeSwitch() {
   }, [isDarkThemeEnabled]);
 
   return (
-    <div className='switch__container'>
-      <input
-        defaultChecked={isDarkThemeEnabled}
-        onClick={(e) => ActionToggleTheme(dispatch, !isDarkThemeEnabled)}
-        id='switch-shadow'
-        className='switch switch--shadow'
-        type='checkbox'
-      ></input>
-      <label htmlFor='switch-shadow'></label>
+    <div
+      onClick={(e) => ActionToggleTheme(dispatch, !isDarkThemeEnabled)}
+      className='switch'
+    >
+      <img
+        height='12px'
+        src={isDarkThemeEnabled ? DarkBulbIcon : LightBulbIcon}
+        alt='Theme bulb'
+      />
     </div>
   );
 }

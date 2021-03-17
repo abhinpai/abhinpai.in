@@ -1,0 +1,16 @@
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--card-dark-color);
+  margin: 1rem;
+  cursor: pointer;
+  user-select: none;
+
+  & img {
+    width: fit-content;
+  }
+}

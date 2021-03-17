@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/molecues/Header';
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 import './scss/main.scss';
@@ -9,6 +10,7 @@ import reducer, { initialState } from './state/reducer';
 ReactDOM.render(
   <React.StrictMode>
     <DataLayer reducer={reducer} initialState={initialState}>
+      <Header />
       <Home />
     </DataLayer>
   </React.StrictMode>,
