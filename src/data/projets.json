@@ -1,7 +1,7 @@
 [
   {
     "title": "Honeywell Forge",
-    "link": null,
+    "link": "https://www.honeywell.com/us/en/honeywell-forge",
     "description": "Developed components for Honeywell forge an enterprise performance management application to bring the sense for IoT data",
     "stack": ["React", "Typescript", "MobX", "SCSS", "Storybook", "Jest"]
   },
