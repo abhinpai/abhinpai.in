@@ -4,7 +4,7 @@
     "link": null,
     "description": "An Enterprise Performance Management Software-as-a-Service, purpose-built on a native edge-to-cloud, data-driven architecture to accelerate digital transformation",
     "stack": [
-      "Rect",
+      "React",
       "Typescript",
       ".Net Core",
       "MobX",
@@ -18,7 +18,7 @@
     "title": "KeyP - Password Manager Application",
     "link": "https://play.google.com/store/apps/details?id=com.pi.KeyP",
     "description": "Design and developed the simplest solution to keep your passwords/pin only with you without accessing the internet ",
-    "stack": ["Fluter", "SQLite", "Figma"]
+    "stack": ["Flutter", "SQLite", "Figma"]
   },
   {
     "title": "Walfin - an app to track all expenses",
@@ -30,6 +30,6 @@
     "title": "Personal Portfolio",
     "description": "The simple, lightweight personal portfolio built by using React, SCSS, and Docusaurus and hosted into Github Page",
     "link": "https://abhinpai.github.io/",
-    "stack": ["Rect", "SCSS", "Docusourus", "Github page"]
+    "stack": ["Recat", "SCSS", "Docusourus", "Github Page"]
   }
 ]
