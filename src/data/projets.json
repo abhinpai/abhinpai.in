@@ -2,34 +2,45 @@
   {
     "title": "Honeywell Forge",
     "link": null,
-    "description": "An Enterprise Performance Management Software-as-a-Service, purpose-built on a native edge-to-cloud, data-driven architecture to accelerate digital transformation",
+    "description": "Developed components for Honeywell forge an enterprise performance management application to bring the sense for IoT data",
+    "stack": ["React", "Typescript", "MobX", "SCSS", "Storybook", "Jest"]
+  },
+  {
+    "title": "Honeywell Site Onboarding Portal",
+    "link": null,
+    "description": "Developed a unified solution for the Honeywell customer to onboard their sites which facilitate the various IoT devices residing on the site by proving the checklist to track the onboarding flow",
     "stack": [
       "React",
       "Typescript",
-      ".Net Core",
       "MobX",
-      "SCSS",
+      ".Net Core",
       "GraphQL",
-      "Storybook",
-      "Kafka"
+      "Specflow",
+      "xUnit"
     ]
+  },
+  {
+    "title": "Honeywell Extensible Object Model",
+    "link": null,
+    "description": "Majorly contributed to the development of the EOM-PaaS APIs using a modern backend stack. which provides the managed infrastructure to serve all the major IoT requirements. And also automated the creation of Kafka topic, consumers, and producers which certainly reduces the overhead to the Digi-ops team",
+    "stack": [".Net Core", "Kafka", "Specflow", "xUnit", "Docker"]
   },
   {
     "title": "KeyP - Password Manager Application",
     "link": "https://play.google.com/store/apps/details?id=com.pi.KeyP",
-    "description": "Design and developed the simplest solution to keep your passwords/pin only with you without accessing the internet ",
+    "description": "Design and developed the simplest solution to keep your passwords/pin only with you without accessing the internet",
     "stack": ["Flutter", "SQLite", "Figma"]
   },
   {
     "title": "Walfin - an app to track all expenses",
     "link": "https://play.google.com/store/apps/details?id=com.think201.walfin.app",
-    "description": "Designed and developed daily expenses tracker mobile app using Ionic 3 and Sqlite which provides a chat-based interface to add, manage and track all of your expenses",
+    "description": "Designed and developed daily expenses tracker mobile app which provides a chat-based interface to add, manage and track all of your expenses",
     "stack": ["Ionic-3", "SQLite"]
   },
   {
     "title": "Personal Portfolio",
-    "description": "The simple, lightweight personal portfolio built by using React, SCSS, and Docusaurus and hosted into Github Page",
+    "description": "A simple lightweight personal portfolio and technology guide which contains various topics such as Javascript, CSS, and React",
     "link": "https://abhinpai.github.io/",
-    "stack": ["Recat", "SCSS", "Docusourus", "Github Page"]
+    "stack": ["React", "SCSS", "Docusaurus", "Github Page"]
   }
 ]
