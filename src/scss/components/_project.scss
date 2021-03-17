@@ -1,23 +1,26 @@
 .project {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
   &__title {
     font-weight: 600;
     margin-bottom: 1rem;
 
-    & .link > img{
-        padding-top: 2px;
-        height: 14px;
+    & .link > img {
+      margin-left: 4px;
+      padding-top: 2px;
+      height: 14px;
     }
-    
   }
 
   &__desc {
     margin-bottom: 1rem;
     letter-spacing: 1px;
     line-height: 1.4rem;
+    font-weight: 300;
   }
 
   &__tech {
     display: flex;
+    min-width: 100%;
+    overflow-x: auto;
   }
 }

@@ -10,16 +10,20 @@
 @import './pages/home';
 
 // Component styles
+@import './components/intro';
 @import './components/message';
 @import './components/hero';
 @import './components/themeSwitch';
 @import './components/description';
 @import './components/connect';
-
-
+@import './components/details';
 @import './components/ribbon';
 @import './components/placeHolder';
 @import './components/experienceCard';
 @import './components/pill';
 @import './components/project';
+@import './components/header';
+
+// Utils
+@import './utils/media';
 // @import './components/connect';

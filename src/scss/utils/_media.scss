@@ -1,0 +1,229 @@
+@media only screen and (max-width: 400px) {
+  .message {
+    font-size: 1rem !important;
+    line-height: 1.8rem !important;
+
+    &__welcome > span > img {
+      height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    margin: 2rem 2rem;
+  }
+
+  .intro {
+    margin: 0;
+  }
+
+  .hero {
+    height: 80px !important;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .description {
+    padding: 1rem 0;
+    p {
+      line-height: 1.8rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  .connect {
+    display: none; // need to think better placement
+    // padding: 0;
+  }
+
+  .experienceCard {
+    width: auto;
+  }
+
+  .ribbon > span {
+    font-size: 1.2rem;
+  }
+
+  .project {
+    &__title {
+      font-size: 1rem;
+    }
+    &__desc {
+      font-size: 0.9rem;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+
+    &__left {
+      margin-left: 0;
+    }
+    &__right {
+      margin: 0;
+
+      &__experience {
+        &-list {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .parent {
+    margin: 2rem 1rem;
+  }
+  .message {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .hero {
+    height: 80px !important;
+  }
+
+  .description {
+    padding: 1rem 0;
+
+    & p {
+      line-height: 1.8rem;
+      font-size: 1rem;
+    }
+  }
+  .intro {
+    margin: 0 4rem;
+  }
+
+  .experienceCard {
+    width: auto;
+  }
+
+  .connect {
+    display: none; // need to think better placement
+  }
+
+  .ribbon > span {
+    font-size: 1.2rem;
+  }
+
+  .project {
+    &__title {
+      font-size: 1rem;
+    }
+    &__desc {
+      font-size: 0.9rem;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+
+    &__left {
+      margin-left: 0;
+    }
+    &__right {
+      margin: 0 4rem;
+
+      &__experience {
+        &-list {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .parent {
+    margin: 4rem 4rem;
+  }
+  .message {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .intro {
+    margin: 0 4rem;
+  }
+
+  .description > p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .connect {
+    display: none; // Need to think a better placement for connect
+    // padding: 0 4rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+
+    &__left {
+      margin-left: 0;
+    }
+    &__right {
+      margin: 0 4rem;
+    }
+  }
+
+  .ribbon > span {
+    font-size: 1.6rem;
+  }
+}
+
+// Large Deveice
+@media only screen and (min-width: 992px) and( max-width: 1280px) {
+  .parent {
+    margin: 4rem 4rem;
+  }
+
+  .message {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .intro {
+    margin: 0 6rem;
+  }
+
+  .connect {
+    padding-left: 0;
+  }
+
+  .details {
+    &__left {
+      margin-left: 0rem;
+    }
+    &__right {
+      margin-right: 6rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1281px) and( max-width: 1600px) {
+  .intro {
+    margin: 0 10rem;
+  }
+
+  .details {
+    &__left {
+      margin-left: 1rem;
+    }
+    &__right {
+      margin-right: 10rem;
+    }
+  }
+}

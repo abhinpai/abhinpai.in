@@ -3,9 +3,16 @@
   align-items: flex-end;
   padding: 0 3rem;
   margin-bottom: auto;
+  justify-content: start;
 
-  &__left{
+  &__left {
     min-width: 6rem;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 
   & h3 {
@@ -36,5 +43,9 @@
   &__provider {
     margin-left: 0.4rem;
     cursor: pointer;
+  }
+
+  & .hero-connect {
+    display: none;
   }
 }

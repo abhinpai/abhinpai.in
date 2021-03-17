@@ -1,44 +1,4 @@
-.home {
-  padding: 4rem;
-
-  & .section__intro {
-    padding: 0 16rem; // Media Query
-    &__banner {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-    }
-  }
-
-  & .section__item {
-    margin-bottom: 2rem;
-  }
-
-  & .section__details {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-
-    & .left {
-      padding-left: 7rem; // Media Query
-    }
-
-    & .right {
-      padding-right: 16rem; // Media Query
-      &__skills {
-        &-list {
-          display: flex;
-          margin-right: 6px;
-        }
-      }
-
-      &__experience {
-        &-list {
-          display: flex;
-          & div {
-            margin-right: 1rem;
-          }
-        }
-      }
-    }
-  }
+.parent {
+  margin: 4rem 6rem;
+  height: 100%;
 }

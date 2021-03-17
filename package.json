@@ -2,6 +2,14 @@
   "name": "abhinpai.in",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Abhin Pai",
+    "url": "https://abhinpai-portfolio.web.app/"
+  },
+  "repository": {
+    "directory": "abhinpai.in",
+    "url": "https://github.com/abhinpai/abhinpai.in"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
