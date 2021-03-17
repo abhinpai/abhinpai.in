@@ -4,7 +4,7 @@ import LinkIcon from '../../assets/link.svg';
 import LinkDarkIcon from '../../assets/link-dark.svg';
 import useData from '../../state/dataLayer';
 
-function Project({ title, description, techs, link }) {
+function ProjectCard({ title, description, techs, link }) {
   const [{ isDarkThemeEnabled }] = useData();
   return (
     <div className='project'>
@@ -36,4 +36,4 @@ function Project({ title, description, techs, link }) {
   );
 }
 
-export default Project;
+export default ProjectCard;

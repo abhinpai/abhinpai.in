@@ -41,6 +41,8 @@ function Connect() {
         return isDarkThemeEnabled ? TwitterDarkIcon : TwitterIcon;
       case 'LinkedIn':
         return isDarkThemeEnabled ? LinkedInDarkIcon : LinkedInIcon;
+      default:
+        break;
     }
   };
 
