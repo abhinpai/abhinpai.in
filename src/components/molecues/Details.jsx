@@ -1,5 +1,5 @@
 import React from 'react';
-import { Connect, Skills, Projects, Experiences } from './index';
+import { Connect, Skills, Projects, Experiences, FamilierTechnologies } from './index';
 
 function Details() {
   return (
@@ -9,6 +9,7 @@ function Details() {
       </div>
       <div className='details__right'>
         <Skills />
+        <FamilierTechnologies />
         <Experiences />
         <Projects />
       </div>

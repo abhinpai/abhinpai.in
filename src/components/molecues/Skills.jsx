@@ -1,16 +1,55 @@
 import React from 'react';
-import PlaceHolder from '../atoms/PlaceHolder';
 import Ribbon from '../atoms/Ribbon';
+import {
+  ReactIcon,
+  JsIcon,
+  CssIcon,
+  ScssIcon,
+  MobxIcon,
+  DotNetCoreIcon,
+  Neo4jIcon,
+  JestIcon,
+} from '../../assets/tech-icons/index';
 
-const skills = [1, 2, 3, 4, 5, 5, 6, 7, 8, 8];
+const skills = [
+  {
+    icon: ReactIcon,
+  },
+  {
+    icon: JsIcon,
+  },
+  {
+    icon: CssIcon,
+  },
+  {
+    icon: ScssIcon,
+  },
+  {
+    icon: DotNetCoreIcon,
+  },
+  {
+    icon: Neo4jIcon,
+  },
+  {
+    icon: MobxIcon,
+  },
+  {
+    icon: JestIcon,
+  },
+];
 
 function Skills() {
   return (
     <div className='details__right__skills'>
       <Ribbon heading='I’m goot at' />
       <div className='details__right__skills-list'>
-        {skills.map((_, index) => (
-          <PlaceHolder key={index} />
+        {skills.map((item, index) => (
+          <img
+            src={item.icon}
+            key={index}
+            alt='index'
+            srcset=''
+          />
         ))}
       </div>
     </div>

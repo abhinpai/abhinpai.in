@@ -1,0 +1,16 @@
+@mixin common-marginTop($top: 1.5rem) {
+  margin-top: $top;
+}
+
+@mixin list-images {
+  min-width: 10%;
+  overflow-x: auto;
+  display: flex;
+}
+
+@mixin details-image {
+  height: 30px;
+  min-width: 30px;
+  cursor: pointer;
+  margin-right: 1.2rem;
+}

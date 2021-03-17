@@ -9,6 +9,8 @@
 // Page styles
 @import './pages/home';
 
+@import './utils/mixins';
+
 // Component styles
 @import './components/intro';
 @import './components/message';
@@ -26,4 +28,4 @@
 
 // Utils
 @import './utils/media';
-// @import './components/connect';
+
