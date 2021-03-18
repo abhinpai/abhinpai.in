@@ -7,15 +7,23 @@
   }
   &__right {
     margin-right: 18rem;
-    &__skills {
+
+    &__skills,
+    &__techs {
       &-list {
-        min-width: 10%;
-        overflow-x: auto;
-        display: flex;
+        @include list-images();
+        & img {
+          @include details-image();
+        }
       }
     }
+
+    &__techs {
+      @include common-marginTop();
+    }
+
     &__experience {
-      margin-top: 1.5rem;
+      @include common-marginTop();
       &-list {
         display: flex;
         gap: 1rem;
@@ -23,7 +31,7 @@
     }
 
     &__projets {
-      margin-top: 1.5rem;
+      @include common-marginTop();
     }
   }
 }
