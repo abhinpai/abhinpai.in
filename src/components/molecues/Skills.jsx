@@ -48,7 +48,7 @@ function Skills() {
             src={item.icon}
             key={index}
             alt='index'
-            srcset=''
+            loading='lazy'
           />
         ))}
       </div>

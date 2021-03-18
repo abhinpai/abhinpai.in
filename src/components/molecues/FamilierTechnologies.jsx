@@ -1,5 +1,14 @@
 import React from 'react';
-import { DockerIcon, DocusaurusIcon, FirebaseIcon, FlutterIcon, GraphQLIcon, ReduxIcon, TsIcon, WebPackIcon } from '../../assets/tech-icons';
+import {
+  DockerIcon,
+  DocusaurusIcon,
+  FirebaseIcon,
+  FlutterIcon,
+  GraphQLIcon,
+  ReduxIcon,
+  TsIcon,
+  WebPackIcon,
+} from '../../assets/tech-icons';
 import Ribbon from '../atoms/Ribbon';
 
 const techs = [
@@ -19,11 +28,14 @@ const techs = [
     icon: FirebaseIcon,
   },
   {
+    icon: GraphQLIcon,
+  },
+  {
     icon: DockerIcon,
   },
   {
     icon: WebPackIcon,
-  }
+  },
 ];
 
 function FamilierTechnologies() {
@@ -32,12 +44,7 @@ function FamilierTechnologies() {
       <Ribbon heading='Familiar Technologies ' />
       <div className='details__right__techs-list'>
         {techs.map((item, index) => (
-          <img
-            src={item.icon}
-            key={index}
-            alt='index'
-            srcset=''
-          />
+          <img src={item.icon} key={index} alt='index' loading='lazy' />
         ))}
       </div>
     </div>
