@@ -1,5 +1,8 @@
+import { stringToBoolean } from '../utils/helper';
+import { THEME_KEY } from '../utils/constants';
+
 export const initialState = {
-  isDarkThemeEnabled: false,
+  isDarkThemeEnabled: stringToBoolean(localStorage.getItem(THEME_KEY)) ?? false,
 };
 
 const reducer = (state, action) => {
