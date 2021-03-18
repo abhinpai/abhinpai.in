@@ -1,5 +1,11 @@
 import React from 'react';
-import { Connect, Skills, Projects, Experiences, FamilierTechnologies } from './index';
+import {
+  Connect,
+  Skills,
+  Projects,
+  Experiences,
+  FamilierTechnologies,
+} from './index';
 
 function Details() {
   return (
