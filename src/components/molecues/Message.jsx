@@ -12,7 +12,7 @@ function Message() {
         I’m Abhin Pai,{' '}
       </p>{' '}
       <br />
-      <p>a self-thought full-stack developer</p>
+      <p>a self-taught full-stack developer</p>
       <p>Who enjoys buildings stuff that lives on the internet</p>
     </div>
   );

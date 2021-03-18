@@ -41,7 +41,7 @@ const skills = [
 function Skills() {
   return (
     <div className='details__right__skills'>
-      <Ribbon heading='I’m goot at' />
+      <Ribbon heading='I’m good at' />
       <div className='details__right__skills-list'>
         {skills.map((item, index) => (
           <img
